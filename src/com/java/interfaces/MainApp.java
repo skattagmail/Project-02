@@ -6,5 +6,7 @@ public class MainApp {
 		boa.checkEligibility();
 		boa.maintainMinBalance();
 		boa.provideNetBanking();
+		
+		FederalBank fb = new BOA();
 	}
 }
