@@ -1,4 +1,4 @@
-package com.java.training.threads;
+package com.java.threads;
 
 class Customer{  
 	int amount=10000;  

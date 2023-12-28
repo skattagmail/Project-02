@@ -14,6 +14,3 @@ public interface FederalBank {
 		System.out.println("Providing Educational Loans");
 	}
 }
-
-
-}

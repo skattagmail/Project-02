@@ -1,13 +1,15 @@
 package com.java.exceptions;
 
-import java.io.*;
-
 class CheckingAccount {
    private double balance;
    private int number;
    
    public CheckingAccount(int number) {
       this.number = number;
+   }
+ 
+   public CheckingAccount() {
+	  super();
    }
    
    public void deposit(double amount) {
@@ -39,6 +41,8 @@ public class Banking {
 
    public static void main(String [] args) {
       CheckingAccount c = new CheckingAccount(101);
+      CheckingAccount c1 = new CheckingAccount();
+      
       System.out.println("Depositing $500...");
       c.deposit(500.00);
       

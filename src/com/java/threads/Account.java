@@ -2,7 +2,9 @@ package com.java.threads;
 
 public class Account {
 	
-	private int balance = 6000;
+	int balance = 6000;
+	int accountNum;
+	static String bankName="Chase";
 
 	
 	public int withDraw(int amount) {
@@ -14,4 +16,7 @@ public class Account {
 		return balance;
 	}
 	
+	public static void testMethod() {
+		System.out.println("Static Method in Account Class");
+	}
 } 
