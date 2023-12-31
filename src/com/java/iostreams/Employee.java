@@ -7,15 +7,17 @@ public class Employee implements Serializable {
 		private static final long serialVersionUID = 1L;
 		public String name;
 		public int id;
-		transient int salary;
-		public String password;
+		public int salary;
+		transient String password;
 		public String gender;
 		
-		@Override
-		public String toString(){
-			return "Employee{name="+name+",id="+id+",salary="+salary+", Password = " + password +"}";
-		}
+
 		
+		@Override
+		public String toString() {
+			return "Employee [name=" + name + ", id=" + id + ", salary=" + salary + ", password=" + password + "]";
+		}
+
 		//getter and setter methods
 		public String getName() {
 			return name;

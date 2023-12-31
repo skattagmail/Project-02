@@ -41,7 +41,7 @@ public class CreateNewFile {
         if(file.createNewFile()){
             System.out.println(relativePath+" File Created in Project root directory");
         }else 
-        	System.out.println("File "+relativePath+" already exists in the project root directory");
+        	System.err.println("File "+relativePath+" already exists in the project root directory");
 
 		String fileData = "Java training";
 		FileOutputStream fos = new FileOutputStream(absoluteFilePath1);
