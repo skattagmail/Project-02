@@ -24,7 +24,7 @@ public class AccountHolder implements Runnable {
 
 	
 		public void run() {
-			for (int i=1; i<=1; i++) {
+			for (int i=1; i<=10; i++) {
 				if (account.getBalance()<= 0) {
 					System.out.println("Your account is overdrawan"); 
 				} else {
